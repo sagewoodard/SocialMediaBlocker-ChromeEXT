@@ -245,8 +245,8 @@ const generateHTML = (pageName) => {
   <div class='c'>
       <div class='_404'>404</div>
       <hr>
-      <div class='_1'>GET BACK TO WORK</div>
-      <div class='_2'>STUDYING > ${pageName}</div>
+      <div class='_1'>STAY FOCUSED</div>
+      <div class='_2'>${pageName} will be here when you're finished!</div>
   </div>
    `;
 };
@@ -254,26 +254,38 @@ const generateHTML = (pageName) => {
 switch (window.location.hostname) {
   case "www.youtube.com":
     document.head.innerHTML = generateSTYLES();
-    document.body.innerHTML = generateHTML("YOUTUBE");
+    document.body.innerHTML = generateHTML("Youtube");
     break;
   case "www.facebook.com":
     document.head.innerHTML = generateSTYLES();
-    document.body.innerHTML = generateHTML("FACEBOOK");
+    document.body.innerHTML = generateHTML("Facebook");
     break;
   case "www.netflix.com":
     document.head.innerHTML = generateSTYLES();
-    document.body.innerHTML = generateHTML("NETFLIX");
+    document.body.innerHTML = generateHTML("Netflix");
     break;
   case "www.roblox.com":
     document.head.innerHTML = generateSTYLES();
-    document.body.innerHTML = generateHTML("ROBLOX");
+    document.body.innerHTML = generateHTML("Roblox");
     break;
   case "discord.com":
     document.head.innerHTML = generateSTYLES();
-    document.body.innerHTML = generateHTML("DISCORD");
+    document.body.innerHTML = generateHTML("Discord");
     break;
   case "www.spotify.com":
     document.head.innerHTML = generateSTYLES();
-    document.body.innerHTML = generateHTML("SPOTIFY");
+    document.body.innerHTML = generateHTML("Spotify");
+    break;
+  case "www.twitter.com":
+    document.head.innerHTML = generateSTYLES();
+    document.body.innerHTML = generateHTML("Twitter");
+    break;
+  case "www.hulu.com":
+    document.head.innerHTML = generateSTYLES();
+    document.body.innerHTML = generateHTML("Hulu");
+    break;
+  case "www.instagram.com":
+    document.head.innerHTML = generateSTYLES();
+    document.body.innerHTML = generateHTML("Instagram");
     break;
 }
